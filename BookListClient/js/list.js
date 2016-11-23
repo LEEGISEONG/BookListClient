@@ -30,7 +30,6 @@ function searchBook(){
                     var authorTd = $("<td></td>").text(data[i].author);
                     var priceTd = $("<td></td>").text(data[i].price);
                     var bisbn = $("<td></td>").text(data[i].bisbn);
-                    var comTd = $("<td></td>");
 
                     var delBtn = $("<input class='btn btn-default'>");
                     delBtn.attr("type", "button");
