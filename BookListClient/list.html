@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="css/jumbotron.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/dashboard.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/list.js"></script>
+<style>
+	.myBookImg {
+		width : 80px;
+	}
+</style>
+<title>도서관리 시스템</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Library Management System</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <span class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search..." id="keyword"
+                    onkeyup="searchBook()">
+          </span>
+        </div>
+      </div>
+    </nav>
+
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-3 col-md-2 sidebar">
+                    <ul class="nav nav-sidebar">
+                      <li class="active"><a href="javascript:bookList()">Book 전체 List<span class="sr-only"></span></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                    <h1 class="page-header">Book List</h1>
+
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                        <tr>
+                          <th>표지</th>
+                          <th>Title</th>
+                          <th style="width: 96px;">ISBN</th>
+                          <th style="width: 76px;">Price</th>
+                          <th style="width: 116px;">Author</th>
+                          <th style="width: 76px;">삭제</th>
+                        </tr>
+                        </thead>
+                        <tbody id="myTbody">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
